@@ -68,14 +68,14 @@ Library Management System API using NodeJS
   <tr>
    <td>Get</td>
    <td>/</td>
-   <td>All</td>
+   <td>Public</td>
    <td>-</td>
    <td>Root Url</td>
   </tr>
   <tr>
    <td>Post</td>
    <td>/users</td>
-   <td>All</td>
+   <td>Public</td>
    <td>{<br>
     "name" : String<sup>*</sup>,<br>
     "email" : email<sup>*</sup>,<br>
@@ -269,7 +269,7 @@ Library Management System API using NodeJS
   <tr>
    <td>Post</td>
    <td>/users/getToken</td>
-   <td>Public</td>
+   <td>Librarian<br>Student<br>Faculty</td>
    <td>{<br>
     "email" : email<sup>*</sup>,<br>
     "password" : String<sup>*</sup><br>
@@ -279,7 +279,7 @@ Library Management System API using NodeJS
   <tr>
    <td>Post</td>
    <td>/users/refreshToken</td>
-   <td>Public</td>
+   <td>Librarian<br>Student<br>Faculty</td>
    <td>{<br>
     "Token" : String<sup>*</sup><br>
     }</td>
