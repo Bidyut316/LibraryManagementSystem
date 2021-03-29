@@ -92,7 +92,7 @@ Library Management System API using NodeJS
    <td>Get user data using id</td>
   </tr>
   <tr>
-   <td>Update</td>
+   <td>Put</td>
    <td>/users/:id</td>
    <td>Librarian</td>
    <td>{<br>
@@ -133,7 +133,7 @@ Library Management System API using NodeJS
    <td>Get book details using id</td>
   </tr>
   <tr>
-   <td>Update</td>
+   <td>Put</td>
    <td>/books/:id</td>
    <td>Librarian</td>
    <td>{<br>
@@ -175,7 +175,7 @@ Library Management System API using NodeJS
    <td>Get records data</td>
   </tr>
   <tr>
-   <td>Update</td>
+   <td>Put</td>
    <td>/records/:id</td>
    <td>Librarian</td>
    <td>{<br>
@@ -213,7 +213,7 @@ Library Management System API using NodeJS
    <td>Get payment data</td>
   </tr>
   <tr>
-   <td>Update</td>
+   <td>Put</td>
    <td>/payments/:id</td>
    <td>Librarian</td>
    <td>{<br>
