@@ -16,7 +16,10 @@ const verifi = require('./verifyToken')
 let Tokn_list = []
 
 
-
+// Root url
+app.get('/', async (req, res) => {
+ res.send("<h1 align='center'>Welcome to Library Management System API</h1>")
+})
 
 // add user data
 app.post('/users', async (req, res) => {
