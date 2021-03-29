@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
+const port = process.env.PORT || 3000;
 const Iview = require("./views/insertViews")
 const Gview = require("./views/getDetailsView")
 const Uview = require("./views/updateViews")
@@ -170,4 +171,4 @@ function generateAccessToken(user) {
 }
 
 
-app.listen(8000);
+app.listen(port);
