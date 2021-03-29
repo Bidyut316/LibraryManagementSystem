@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize')
 
 // On local machin 
-
-/*const sequelize = new Sequelize('NodeTest', 'postgres', '1234', {
+/*
+const sequelize = new Sequelize('NodeTest', 'postgres', '1234', {
  host: 'localhost',
  dialect: 'postgres'
 });*/

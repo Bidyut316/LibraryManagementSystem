@@ -28,21 +28,21 @@ app.post('/users', async (req, res) => {
 })
 
 // get user data
-app.get('/users/:id', verifi.auth, async (req, res) => {
+app.get('/users/:id', verifi.librarian_auth, async (req, res) => {
  Gview.get_details(req, res, "user")
 })
 
 // update user data
-app.put('/users/:id', verifi.auth, async (req, res) => {
+app.put('/users/:id', verifi.librarian_auth, async (req, res) => {
  Uview.user_update(req, res)
 })
 
 // Delete User data
-app.delete('/users/:id', verifi.auth, async (req, res) => {
+app.delete('/users/:id', verifi.librarian_auth, async (req, res) => {
  Dview.user_delete(req, res)
 })
 // add book data
-app.post('/books', verifi.auth, async (req, res) => {
+app.post('/books', verifi.librarian_auth, async (req, res) => {
  Iview.add_book(req, res)
 })
 
@@ -52,17 +52,17 @@ app.get('/books/:id', verifi.auth, async (req, res) => {
 })
 
 // update book data
-app.put('/books/:id', verifi.auth, async (req, res) => {
+app.put('/books/:id', verifi.librarian_auth, async (req, res) => {
  Uview.book_update(req, res)
 })
 
 // Delete Book data
-app.delete('/books/:id', verifi.auth, async (req, res) => {
+app.delete('/books/:id', verifi.librarian_auth, async (req, res) => {
  Dview.book_delete(req, res)
 })
 
 // add records
-app.post('/records', verifi.auth, async (req, res) => {
+app.post('/records', verifi.librarian_auth, async (req, res) => {
  Iview.add_record(req, res)
 })
 
@@ -72,17 +72,17 @@ app.get('/records/:id', verifi.auth, async (req, res) => {
 })
 
 // update record data
-app.put('/records/:id', verifi.auth, async (req, res) => {
+app.put('/records/:id', verifi.librarian_auth, async (req, res) => {
  Uview.record_update(req, res)
 })
 
 // Delete record data
-app.delete('/records/:id', verifi.auth, async (req, res) => {
+app.delete('/records/:id', verifi.librarian_auth, async (req, res) => {
  Dview.record_delete(req, res)
 })
 
 // add payment
-app.post('/payments', verifi.auth, async (req, res) => {
+app.post('/payments', verifi.librarian_auth, async (req, res) => {
  Iview.add_payment(req, res)
 })
 
@@ -92,12 +92,12 @@ app.get('/payments/:id', verifi.auth, async (req, res) => {
 })
 
 // update payment data
-app.put('/payments/:id', verifi.auth, async (req, res) => {
+app.put('/payments/:id', verifi.librarian_auth, async (req, res) => {
  Uview.payment_update(req, res)
 })
 
 // Delete payment data
-app.delete('/payments/:id', verifi.auth, async (req, res) => {
+app.delete('/payments/:id', verifi.librarian_auth, async (req, res) => {
  Dview.payment_delete(req, res)
 })
 
@@ -167,7 +167,7 @@ app.post('/users/refreshToken', async (req, res) => {
 })
 
 function generateAccessToken(user) {
- return jwt.sign(user, process.env.TOKEN_SECRET, { expiresIn: '15s' })
+ return jwt.sign(user, process.env.TOKEN_SECRET, { expiresIn: '150s' })
 }
 
 
