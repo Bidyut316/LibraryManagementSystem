@@ -56,6 +56,9 @@ Library Management System API using NodeJS
   <li>There are three user roles - Librarian, Student, Faculty.</li>
   <li>Librarians can edit, update, delete and read user, book, records, payment data.</li>
  </ul>
+ <h3>Send access token in header</h3>
+ <p>Key = auth_token</p>
+ <p>Value = Token value</p>
  <h3>The API(s) are:</h3>
  <table style="width:100%">
   <tr>
