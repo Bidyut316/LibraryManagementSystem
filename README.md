@@ -283,6 +283,6 @@ Library Management System API using NodeJS
    <td>{<br>
     "Token" : String<sup>*</sup><br>
     }</td>
-   <td>Pass expired token & Get<br> a renewed access token.</td>
+   <td>Pass expired token & Get<br> a renewed access token.<br>Refresh token validate 150 sec.</td>
   </tr>
  </table>
